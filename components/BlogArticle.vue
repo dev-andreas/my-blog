@@ -9,7 +9,10 @@
           <div class="h-0.5 rounded-full bg-font-dark w-3"></div>
           <div class="h-0.5 rounded-full bg-font-dark w-4"></div>
         </button>
-        <a class="font-bold" href="#">Back to top</a>
+        <Transition name="slide-top">
+          <a v-if="!scrolledToTop" class="font-bold transition ease-out duration-200" :class="{ 'opacity-0': scrolledToTop }" href="#">Back to
+            top</a>
+        </Transition>
       </div>
     </div>
     <div class="standard-blog-width flex flex-col mdlg:flex-row items-start mdlg:gap-12">
@@ -45,13 +48,12 @@
             <p class="font-bold">Table of Contents</p>
             <hr class="border-primary-300">
             <div class="flex relative flex-col gap-3">
-              <a @click.prevent="toggleTable(); goToId(section.id)" v-for="section in articleStore.sectionsList" :key="section.id"
-                :href="'#' + section.id"
+              <a @click.prevent="toggleTable(); goToId(section.id)" v-for="section in articleStore.sectionsList"
+                :key="section.id" :href="'#' + section.id"
                 class="text-primary-500 hover:text-font-dark transition-all duration-300 ease-out"
                 :class="section.type == 1 ? 'font-semibold text-primary-600' : 'translate-x-2'">
                 {{ section.name }}
               </a>
-
             </div>
           </div>
         </Transition>
@@ -78,6 +80,7 @@ const widthStore = useWidthStore();
 
 const mobileView = computed(() => widthStore.windowWidth < widthStore.sizes["mdlg"]);
 const showTable = ref(false);
+const scrolledToTop = ref(true)
 
 function toggleTable() {
   showTable.value = !showTable.value;
@@ -90,7 +93,16 @@ function goToId(id) {
   }
 }
 
+function checkWindowScroll() {
+  scrolledToTop.value = (window.scrollY <= 100);
+}
+
+onMounted(() => {
+  window.addEventListener("scroll", checkWindowScroll);
+});
+
 onBeforeMount(() => {
+  window.removeEventListener("scroll", checkWindowScroll);
   articleStore.$reset();
 });
 
