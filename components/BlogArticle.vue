@@ -4,7 +4,7 @@
       class="sticky top-0 h-12 w-full bg-backg-light bg-opacity-70 backdrop-blur-lg border-b border-primary-300 flex justify-center items-center shadow-sm"
       style="z-index: 10000">
       <div class="standard-blog-width flex justify-between items-center">
-        <button class="flex flex-col gap-1" @click="toggleTable">
+        <button class="flex flex-col gap-1" @click="toggleTable('')">
           <div class="h-0.5 rounded-full bg-font-dark w-5"></div>
           <div class="h-0.5 rounded-full bg-font-dark w-3"></div>
           <div class="h-0.5 rounded-full bg-font-dark w-4"></div>
@@ -15,19 +15,18 @@
     <div class="standard-blog-width flex flex-col mdlg:flex-row items-start mdlg:gap-12">
 
       <!-- desktop sidebar -->
-      <aside v-if="!mobileView"
-        class="sticky top-30 border-r border-font-dark w-72 overflow-auto pl-4 pr-4 pb-2">
+      <aside v-if="!mobileView" class="sticky top-30 border-r border-font-dark w-72 overflow-auto pl-4 pr-4 pb-2">
         <div class="sticky top-0 p-2 backdrop-blur-md bg-backg-light flex flex-col gap-4 items-start z-50">
           <p class="font-bold">Table of Contents</p>
         </div>
         <div class="flex relative flex-col px-2 gap-2">
           <div v-for="section in articleStore.sectionsList" :key="section.id" class="relative flex items-center">
-            <a v-if="section.type == 1" :href="'#' + section.id"
+            <a v-if="section.type == 1" @click.prevent="goToId(section.id)" :href="'#' + section.id"
               class="hover:text-font-dark transition-all duration-300 ease-out ml-1"
               :class="section.id == articleStore.getLowestSection ? 'text-font-dark' : 'text-primary-600'">
               {{ section.name }}
             </a>
-            <a v-else-if="section.type == 2" :href="'#' + section.id"
+            <a v-else-if="section.type == 2" @click.prevent="goToId(section.id)" :href="'#' + section.id"
               class="hover:text-font-dark transition-all duration-300 ease-out ml-4"
               :class="section.id == articleStore.getLowestSection ? 'text-font-dark' : 'text-primary-500'">
               {{ section.name }}
@@ -46,12 +45,13 @@
             <p class="font-bold">Table of Contents</p>
             <hr class="border-primary-300">
             <div class="flex relative flex-col gap-3">
-              <a @click="toggleTable()" v-for="section in articleStore.sectionsList" :key="section.id"
+              <a @click.prevent="toggleTable(); goToId(section.id)" v-for="section in articleStore.sectionsList" :key="section.id"
                 :href="'#' + section.id"
-                class="text-primary-500 hover:text-font-dark transition-all duration-300 ease-out" :class="section.type == 1 ? 'font-semibold text-primary-600' : ''">
+                class="text-primary-500 hover:text-font-dark transition-all duration-300 ease-out"
+                :class="section.type == 1 ? 'font-semibold text-primary-600' : 'translate-x-2'">
                 {{ section.name }}
               </a>
-              
+
             </div>
           </div>
         </Transition>
@@ -81,6 +81,13 @@ const showTable = ref(false);
 
 function toggleTable() {
   showTable.value = !showTable.value;
+}
+
+function goToId(id) {
+  if (id != '') {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    history.replaceState(null, "", `#${id}`);
+  }
 }
 
 onBeforeMount(() => {

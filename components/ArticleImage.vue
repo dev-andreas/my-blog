@@ -7,7 +7,7 @@
         <figcaption class="text-center mt-1 text-primary-600">{{ image.alt }}</figcaption>
       </figure>
     </div>
-    <button v-if="showToggle" @click="toggle" class="flex items-center gap-1 self-center btn-secondary">
+    <button v-if="showToggle" @click.prevent="toggle" class="flex items-center gap-1 self-center btn-secondary">
       <SvgPathsChevronDownSvg v-if="preview" class="w-5 stroke-font-dark"></SvgPathsChevronDownSvg>
       <SvgPathsChevronUpSvg v-else class="w-5 stroke-font-dark"></SvgPathsChevronUpSvg>
       <span v-if="preview">View all</span>
@@ -31,8 +31,7 @@ let gridSize = ref(0);
 function toggle() {
   preview.value = !preview.value;
   if (preview.value) {
-    window.location.replace('#')
-    window.location.replace('#' + props.id)
+    document.getElementById(props.id)?.scrollIntoView({ behavior: "smooth" });
   }
 }
 

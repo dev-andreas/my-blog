@@ -23,8 +23,8 @@ const map = ref(null);
 const onMapReady = () => {
 
   var markerIcon = L.icon({
-    iconUrl: '_nuxt/assets/images/marker.svg',
-    shadowUrl: '_nuxt/assets/images/marker_shadow.svg',
+    iconUrl: '/images/marker.svg',
+    shadowUrl: '/images/marker_shadow.svg',
 
     iconSize: [30, 30], // size of the icon
     shadowSize: [30, 30], // size of the shadow
