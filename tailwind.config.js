@@ -1,0 +1,108 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          900: '#1e1c17',
+          800: '#3f3d37',
+          700: '#5e5c55',
+          600: '#726f68',
+          500: '#9a9890',
+          400: '#bab7b0',
+          300: '#dedbd3',
+          200: '#edeae2',
+          100: '#f6f3eb',
+          50: '#fcf9f1',
+        },
+        backg: {
+          light: '#fcf9f1',
+          lighttrans: '#fcf9f188',
+          dark: '#1f1d17',
+        },
+        font: {
+          light: '#f6f3eb',
+          dark: '#4e4b44',
+        }
+      },
+      scale: {
+        '70': '.7',
+        '60': '.6',
+      },
+      fontFamily: {
+        sans: ["Quicksand"],
+        serif: ["Quicksand"],
+        mono: ["Quicksand"],
+        display: ["Quicksand"],
+        body: ["Quicksand"]
+      },
+      spacing: {
+        '0': '0',
+        '1': '0.25rem',
+        '2': '0.5rem',
+        '3': '0.75rem',
+        '4': '1rem',
+        '5': '1.25rem',
+        '6': '1.5rem',
+        '7': '1.75rem',
+        '8': '2rem',
+        '9': '2.25rem',
+        '10': '2.5rem',
+        '11': '2.75rem',
+        '12': '3rem',
+        '13': '3.25rem',
+        '14': '3.5rem',
+        '15': '3.75rem',
+        '16': '4rem',
+        '17': '4.25rem',
+        '18': '4.5rem',
+        '19': '4.75rem',
+        '20': '5rem',
+        '22.5': '5.625rem',
+        '30': '7.5rem',
+        '108': '27rem',
+        '120': '30rem',
+        '132': '33rem',
+        '144': '36rem',
+        '156': '39rem',
+        '168': '42rem',
+        '180': '45rem',
+        '192': '48rem',
+        '204': '51rem',
+        '216': '54rem',
+        '228': '57rem',
+        '240': '60rem',
+        '252': '63rem',
+        '264': '66rem',
+        '276': '69rem',
+        '288': '72rem',
+        '300': '75rem',
+        '312': '78rem',
+        '324': '81rem',
+        '336': '84rem',
+        '348': '87rem',
+        '360': '90rem',
+        '372': '93rem',
+      },
+      screens: {
+        '2xs': '360px',
+        'mdlg': '960px',
+        'xs': '414px',
+      },
+
+      dropShadow: {
+        'flat': '0.4rem 0.4rem #00000022'
+      },
+    },
+  },
+  plugins: [],
+}
+
