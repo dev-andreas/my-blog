@@ -2,7 +2,7 @@
   <ClientOnly fallback-tag="span" fallback="Loading map...">
     <div class="h-80 mdlg:h-120">
       <LMap class="rounded-lg border border-primary-400 shadow-md" :zoom="widthStore.windowWidth < widthStore.sizes['mdlg'] ? 1 : 2" :min-zoom="1" :max-bounds="[[-90, -180], [90, 180]]"
-        :center="[30, 10]" :use-global-leaflet="true" ref="map" @ready="onMapReady">
+        :center="[30, -10]" :use-global-leaflet="true" ref="map" @ready="onMapReady">
         <LTileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&amp;copy; <a href=&quot;https://www.openstreetmap.org/&quot;>OpenStreetMap</a> contributors"
           layer-type="base" name="OpenStreetMap" class=" rounded-lg" :no-wrap="true" />
