@@ -57,7 +57,7 @@
                 ]"></ArticleImage>
             </ArticleSection>
             <ArticleSubSection id="japanese-tea-garden" header="Japanese Tea Garden">
-                <p>The Japanese Tea Garden is nestled within the beautiful Golden Gate Park. The entrance fee is $21.75
+                <p>The Japanese Tea Garden is inside Golden Gate Park. The entrance fee is $21.75
                     for adults, which I personally don’t think is worth it. However, you can
                     enter the garden for free from 9 AM to 10 AM on Mondays, Wednesdays, and Fridays. The garden itself
                     is quite small, but it’s still a lovely place to stroll and admire the beautiful scenery.
