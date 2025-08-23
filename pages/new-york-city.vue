@@ -156,7 +156,8 @@
           Cheesecake. I visited Junior’s and ordered a whole cake for myself (which unfortunately caused me some stomach
           discomfort). Another must-try is New York-style pizza. You can find it in almost every corner of Manhattan
           at incredibly cheap prices. There are also these food trucks everywhere, but I wouldn’t personally
-          recommend them since you can get food at regular restaurants at the same price with probably better quality.</p>
+          recommend them since you can get food at regular restaurants at the same price with probably better quality.
+        </p>
         <ArticleImage id="food-images" :images="[
           { path: '/images/places/nyc/food4.jpeg', alt: 'NYC Cheesecake from Junior\'s' },
           { path: '/images/places/nyc/food1.jpeg', alt: 'Falafel from Sharif\'s Famous Halal Food (Random Food Truck)' },
@@ -247,7 +248,10 @@
       </ArticleSection>
 
       <ArticleSection id="conclusion" header="Conclusion">
-        If you're going to the east cost, you should definitely visit NYC. You get tons of food options, museums, and tall buildings!
+        <p>
+          If you're going to the east cost, you should definitely visit NYC. You get tons of food options, museums, and
+          tall buildings!
+        </p>
       </ArticleSection>
     </template>
   </BlogArticle>

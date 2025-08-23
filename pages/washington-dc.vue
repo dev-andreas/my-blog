@@ -173,11 +173,15 @@
         ]"></ArticleImage>
       </ArticleSection>
       <ArticleSection id="conclusion" header="Conclusion">
-        Washington, D.C. is one of the most beautiful cities in the USA and great for for museum enthusiasts. You can
-        spend days exploring all museums, and the best part is that they are all free to visit. It’s also a great place
-        to hang out during the summer. In the spring, the city is covered with cherry blossoms, which I unfortunately
-        missed. I have another story to share: I managed to ruin my jacket, which I had bought a few months earlier, by
-        leaning against a freshly painted lantern pole. Make sure to not lean against any lantern poles!
+        <p>
+          Washington, D.C. is one of the most beautiful cities in the USA and great for for museum enthusiasts. You can
+          spend days exploring all museums, and the best part is that they are all free to visit. It’s also a great
+          place
+          to hang out during the summer. In the spring, the city is covered with cherry blossoms, which I unfortunately
+          missed. I have another story to share: I managed to ruin my jacket, which I had bought a few months earlier,
+          by
+          leaning against a freshly painted lantern pole. Make sure to not lean against any lantern poles!
+        </p>
       </ArticleSection>
     </template>
   </BlogArticle>

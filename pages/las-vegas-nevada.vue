@@ -73,8 +73,10 @@
                 ]"></ArticleImage>
             </ArticleSection>
             <ArticleSection id="conclusion" header="Conclusion">
-                Las Vegas was an unpleasant experience for me. I felt unsafe walking around there,
-                and the homeless people made me feel bad. Sadly, this place is only for drinking and gambling.
+                <p>
+                    Las Vegas was an unpleasant experience for me. I felt unsafe walking around there,
+                    and the homeless people made me feel bad. Sadly, this place is only for drinking and gambling.
+                </p>
             </ArticleSection>
         </template>
     </BlogArticle>

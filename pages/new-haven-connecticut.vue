@@ -62,11 +62,13 @@
         ]"></ArticleImage>
       </ArticleSection>
       <ArticleSection id="conclusion" header="Conclusion">
-        New Haven is a small city with a stunning coastline and a great food scene.
-        I can definitely recommend this place. They have one of the best pizza restaurants in
-        the country, but be prepared to wait in line.
-        If you’re planning a trip to New York City and you’re coming from the north, you might want to squeeze in a
-        quick visit to New Haven.
+        <p>
+          New Haven is a small city with a stunning coastline and a great food scene.
+          I can definitely recommend this place. They have one of the best pizza restaurants in
+          the country, but be prepared to wait in line.
+          If you’re planning a trip to New York City and you’re coming from the north, you might want to squeeze in a
+          quick visit to New Haven.
+        </p>
       </ArticleSection>
     </template>
   </BlogArticle>

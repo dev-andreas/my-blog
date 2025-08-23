@@ -155,9 +155,12 @@
       </ArticleSection>
 
       <ArticleSection id="conclusion" header="Conclusion">
-        Boston is one of the oldest cities in the USA and rich in history. If you’re into that and you’re on
-        the East Coast, I highly recommend checking it out. Otherwise, you might want to consider New York City instead,
-        as there are a ton more things to do there.
+        <p>
+          Boston is one of the oldest cities in the USA and rich in history. If you’re into that and you’re on
+          the East Coast, I highly recommend checking it out. Otherwise, you might want to consider New York City
+          instead,
+          as there are a ton more things to do there.
+        </p>
       </ArticleSection>
     </template>
   </BlogArticle>

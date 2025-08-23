@@ -58,12 +58,15 @@
         ]"></ArticleImage>
       </ArticleSection>
       <ArticleSection id="conclusion" header="Conclusion">
-        The Cleveland Museum of Art was undoubtedly the highlight of my trip and the primary reason I would highly
-        recommend visiting Cleveland.
-        Apart from the museum, the city itself appeared quite clean and had an efficient bus network, particularly in
-        the downtown area.
-        If you find yourself in the vicinity and are interested in art museums or theaters, I suggest you
-        make a stop in Cleveland. In my case, I visited the city as a convenient detour on my way back home from Chicago.
+        <p>
+          The Cleveland Museum of Art was undoubtedly the highlight of my trip and the primary reason I would highly
+          recommend visiting Cleveland.
+          Apart from the museum, the city itself appeared quite clean and had an efficient bus network, particularly in
+          the downtown area.
+          If you find yourself in the vicinity and are interested in art museums or theaters, I suggest you
+          make a stop in Cleveland. In my case, I visited the city as a convenient detour on my way back home from
+          Chicago.
+        </p>
       </ArticleSection>
     </template>
   </BlogArticle>
