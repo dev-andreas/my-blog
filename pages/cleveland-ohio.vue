@@ -18,7 +18,7 @@
           the United States.
           However, the downtown area of Cleveland is home to Playhouse Square, a theater district.
           You can enjoy musicals, plays, concerts, comedy shows, and ballet performances.
-          While I was unable to allocate the time to visit, I highly recommend checking out Playhouse Square if you have
+          While I was unable to find the time to visit, I highly recommend checking out Playhouse Square if you have
           an interest in theaters.
           It is one of the largest performing arts centers in the United States.
         </p>
