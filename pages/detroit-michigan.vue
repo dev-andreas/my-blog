@@ -40,7 +40,8 @@
         ]"></ArticleImage>
       </ArticleSection>
       <ArticleSection id="milliken-state-park-lighthouse" header="Milliken State Park Lighthouse">
-        <p>If you decide to visit Detroit, you should make sure to visit the <i>Milliken State Park Lighthouse</i>. It offers a
+        <p>If you decide to visit Detroit, you should make sure to visit the <i>Milliken State Park Lighthouse</i>. It
+          offers a
           view of the city’s skyline and the Canadian city Windsor, which is located on the opposite side of the
           Detroit River. This was one of the highlights of the day trip.
         </p>
@@ -63,13 +64,17 @@
         ]"></ArticleImage>
       </ArticleSection>
       <ArticleSection id="conclusion" header="Conclusion">
-        When writing this article, I was torn between publishing it and not doing so, as it’s mostly consists of
-        negative opinions about Detroit. However, I decided to publish it because I want to be transparent about my
-        opinions and document all my experiences in the United States. I don’t intend to offend anyone who lives in
-        Detroit and loves their city. I visited Detroit because I was genuinely interested in exploring it. I had heard
-        many things about Detroit and wanted to see for myself. It met all my expectations and I enjoyed
-        my trip. As mentioned earlier, if you’re genuinely interested in Detroit, then go there. Otherwise, skip it and
-        head to Chicago instead. My next stop was Cleveland, Ohio by bus.
+        <p>
+          When writing this article, I was torn between publishing it and not doing so, as it’s mostly consists of
+          negative opinions about Detroit. However, I decided to publish it because I want to be transparent about my
+          opinions and document all my experiences in the United States. I don’t intend to offend anyone who lives in
+          Detroit and loves their city. I visited Detroit because I was genuinely interested in exploring it. I had
+          heard
+          many things about Detroit and wanted to see for myself. It met all my expectations and I enjoyed
+          my trip. As mentioned earlier, if you’re genuinely interested in Detroit, then go there. Otherwise, skip it
+          and
+          head to Chicago instead. My next stop was Cleveland, Ohio by bus.
+        </p>
       </ArticleSection>
     </template>
   </BlogArticle>
