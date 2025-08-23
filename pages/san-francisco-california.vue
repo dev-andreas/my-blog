@@ -25,7 +25,7 @@
             </ArticleSection>
             <ArticleSection id="golden-gate-bridge" header="Golden Gate Bridge">
                 <p>The Golden Gate Bridge is the most famous symbol of San Francisco. When it opened, it was the longest
-                    and tallest suspension bridge in the world. If you’re in town, you should definitely walk across the
+                    and tallest suspension bridge in the world. If you’re there, you should definitely walk across the
                     bridge and take a photo at <i>Golden Gate Bridge Vista Point</i>. You’ll get an amazing view of the
                     bridge
                     and the city skyline. You can also get a great view of the bridge from <i>Lands End</i>.</p>
