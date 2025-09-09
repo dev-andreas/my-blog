@@ -1,7 +1,7 @@
 <template>
   <BlogArticle>
     <template #header>
-      <h1 class="article-header">New Haven, Connecticut</h1>
+      <h1 class="article-header">New Haven, Connecticut, USA</h1>
       <p class="header-text">
         New Haven is located on the eastern coast line of the United States, near New York City.
         The city is home to around 130,000 people, and approximately 20% of the population is of Italian descent.
@@ -73,9 +73,3 @@
     </template>
   </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-
-
-</script>

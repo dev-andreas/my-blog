@@ -1,7 +1,7 @@
 <template>
   <BlogArticle>
     <template #header>
-      <h1 class="article-header">Detroit, Michigan</h1>
+      <h1 class="article-header">Detroit, Michigan, USA</h1>
       <p class="header-text">
         Detroit, once home to approximately 2 million people in the 1950s, experienced a significant decline in its
         population, primarily due to economic factors. Today, the city’s population stands at around 640,000
@@ -79,9 +79,3 @@
     </template>
   </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-
-
-</script>

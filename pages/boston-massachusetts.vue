@@ -1,7 +1,7 @@
 <template>
   <BlogArticle>
     <template #header>
-      <h1 class="article-header">Boston, Massachusetts</h1>
+      <h1 class="article-header">Boston, Massachusetts, USA</h1>
       <p class="header-text">
         Boston is the capital of Massachusetts and with a population of around 700,000 people (as of 2025) the largest
         city in New England.
@@ -165,9 +165,3 @@
     </template>
   </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-import ArticleSubSection from '~/components/ArticleSubSection.vue';
-
-</script>

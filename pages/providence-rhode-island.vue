@@ -1,7 +1,7 @@
 <template>
   <BlogArticle>
     <template #header>
-      <h1 class="article-header">Providence, Rhode Island</h1>
+      <h1 class="article-header">Providence, Rhode Island, USA</h1>
       <p class="header-text">
         Providence is the capital of Rhode Island and has a population of around 190,000 people.
         The city is founded in 1636, making it one of the oldest cities in New England.
@@ -87,9 +87,3 @@
     </template>
   </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-
-
-</script>

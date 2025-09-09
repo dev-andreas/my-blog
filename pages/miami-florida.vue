@@ -1,7 +1,7 @@
 <template>
   <BlogArticle>
     <template #header>
-      <h1 class="article-header">Miami, Florida</h1>
+      <h1 class="article-header">Miami, Florida, USA</h1>
       <p class="header-text">
         Miami is a coastal city with a tropical climate and has a population of around 500,000 people. As a tourist you
         usually stay at Miami Beach, an island next to downtown. The place is perfect for a beach holiday. I stayed in
@@ -100,9 +100,3 @@
     </template>
   </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-import ArticleSubSection from '~/components/ArticleSubSection.vue';
-
-</script>

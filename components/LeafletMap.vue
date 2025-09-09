@@ -1,36 +1,57 @@
 <template>
   <ClientOnly fallback-tag="span" fallback="Loading map...">
-    <div class="h-80 mdlg:h-120">
-      <LMap class="rounded-lg border border-primary-400 shadow-md" :zoom="widthStore.windowWidth < widthStore.sizes['mdlg'] ? 1 : 2" :min-zoom="1" :max-bounds="[[-90, -180], [90, 180]]"
-        :center="[30, -10]" :use-global-leaflet="true" ref="map" @ready="onMapReady">
+    <div class="h-80 sm:h-120">
+      <LMap class="rounded-lg border border-primary-400 shadow-md" :zoom="props.zoom" :min-zoom="props.minZoom" :max-bounds="props.maxBounds"
+        :center="props.center" :use-global-leaflet="true" ref="map" @ready="onMapReady">
         <LTileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&amp;copy; <a href=&quot;https://www.openstreetmap.org/&quot;>OpenStreetMap</a> contributors"
-          layer-type="base" name="OpenStreetMap" class=" rounded-lg" :no-wrap="true" />
+          layer-type="base" name="OpenStreetMap" :no-wrap="true"/>
       </LMap>
     </div>
   </ClientOnly>
 </template>
 
 <script setup>
-import L from 'leaflet'
 import { useWidthStore } from '/stores/width';
 
-const props = defineProps(["locations"]);
+const props = defineProps({
+  locations: {
+    type: Array,
+    default: []
+  },
+  zoom: {
+    type: Number,
+    default: 1
+  },
+  minZoom: {
+    type: Number,
+    default: 0
+  },
+  maxBounds: {
+    type: Array,
+    default: [[-90, -180], [90, 180]]
+  },
+  center: {
+    type: Array,
+    default: [30, -10]
+  }
+});
 const widthStore = useWidthStore();
 const map = ref(null);
 
 // When the map is ready
 const onMapReady = () => {
 
+
   var markerIcon = L.icon({
     iconUrl: '/images/marker.svg',
     shadowUrl: '/images/marker_shadow.svg',
-
-    iconSize: [30, 30], // size of the icon
-    shadowSize: [30, 30], // size of the shadow
-    iconAnchor: [15, 30], // point of the icon which will correspond to marker's location
-    shadowAnchor: [6, 30],  // the same for the shadow
-    popupAnchor: [0, -30] // point from which the popup should open relative to the iconAnchor
+  
+    iconSize: [20, 20], // size of the icon
+    shadowSize: [20, 20], // size of the shadow
+    iconAnchor: [10, 20], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 20],  // the same for the shadow
+    popupAnchor: [0, -20] // point from which the popup should open relative to the iconAnchor
   });
 
   function sanitize(string) {
@@ -64,11 +85,3 @@ const onMapReady = () => {
   });
 }
 </script>
-
-<style scoped>
-@media only screen and (max-width: 960px) {
-  body {
-    background-color: lightblue;
-  }
-}
-</style>

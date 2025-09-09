@@ -1,7 +1,7 @@
 <template>
     <BlogArticle>
         <template #header>
-            <h1 class="article-header">Zion National Park, Utah</h1>
+            <h1 class="article-header">Zion National Park, Utah, USA</h1>
             <p class="header-text">
                 The national park is situated in southwest Utah, near Arizona. I highly recommend spending at least two
                 days there to fully explore all the major trails.
@@ -76,8 +76,3 @@
         </template>
     </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-
-</script>

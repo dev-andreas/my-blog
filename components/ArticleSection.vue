@@ -1,7 +1,7 @@
 <template>
-  <section ref="articleSection" class="flex flex-col gap-5">
-    <hr class="border-primary-300">
-    <h2 class="article-subheader relative group" :id="props.id">
+  <section ref="articleSection" class="flex flex-col gap-5 pt-10" :id="props.id">
+    <hr v-if="showHeader" class="border-primary-300">
+    <h2 v-if="showHeader" class="article-subheader relative group">
       <a class="absolute hidden mdlg:block -left-6 opacity-0 group-hover:opacity-100 text-primary-300 transition-all duration-300 ease-out hover:text-primary-400"
         :href="'#' + props.id">#</a>
       <span class="absolute w-10 h-10 -left-1"></span>
@@ -24,6 +24,10 @@ const props = defineProps({
   header: {
     type: String,
     default: ""
+  },
+  showHeader: {
+    type: Boolean,
+    default: true
   }
 });
 

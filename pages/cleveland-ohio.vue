@@ -1,7 +1,7 @@
 <template>
   <BlogArticle>
     <template #header>
-      <h1 class="article-header">Cleveland, Ohio</h1>
+      <h1 class="article-header">Cleveland, Ohio, USA</h1>
       <p class="header-text">
         At first glance, Cleveland appears to be just another ordinary city in the United States, but there are actually
         numerous activities and attractions to discover.
@@ -71,9 +71,3 @@
     </template>
   </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-
-
-</script>

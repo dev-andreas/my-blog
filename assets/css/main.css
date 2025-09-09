@@ -68,6 +68,14 @@ p {
     @apply w-72 2xs:w-80 xs:w-96 sm:w-132 md:w-156 mdlg:w-216 lg:w-240 xl:w-288;
 }
 
+.standard-article-width {
+    @apply w-72 2xs:w-80 xs:w-96 sm:w-132 md:w-156 mdlg:w-132 lg:w-156 xl:w-204;
+}
+
+.standard-article-height {
+    @apply h-72 2xs:h-80 xs:h-96 sm:h-132 md:h-156 mdlg:h-132 lg:h-156 xl:h-204;
+}
+
 .shadow-flat {
     filter: drop-shadow(0.4rem 0.4rem #00000022);
 }

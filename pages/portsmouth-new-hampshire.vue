@@ -1,7 +1,7 @@
 <template>
   <BlogArticle>
     <template #header>
-      <h1 class="article-header">Portsmouth, New Hampshire</h1>
+      <h1 class="article-header">Portsmouth, New Hampshire, USA</h1>
       <p class="header-text">
         Portsmouth is a small city and seaport in New Hampshire with a population of around 20 thousand people. I
         recommend going there for a day trip in the summer if you are already in the region.
@@ -49,9 +49,3 @@
     </template>
   </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-
-
-</script>

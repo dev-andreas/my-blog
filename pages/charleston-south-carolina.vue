@@ -1,7 +1,7 @@
 <template>
   <BlogArticle>
     <template #header>
-      <h1 class="article-header">Charleston, South Carolina</h1>
+      <h1 class="article-header">Charleston, South Carolina, USA</h1>
       <p class="header-text">
         Charleston, the most populous city in South Carolina, has a population of approximately 150,000 people. Its
         historic downtown area is a popular tourist destination, having numerous historic buildings. I
@@ -105,9 +105,3 @@
     </template>
   </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-import ArticleSubSection from '~/components/ArticleSubSection.vue';
-
-</script>

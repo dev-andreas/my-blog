@@ -1,7 +1,7 @@
 <template>
     <BlogArticle>
         <template #header>
-            <h1 class="article-header">San Francisco, California</h1>
+            <h1 class="article-header">San Francisco, California, USA</h1>
             <p class="header-text">
                 San Francisco is a coastal city at the west coast of the United States. As of 2025, the city has a
                 population of approximately 800,000 people.
@@ -123,9 +123,3 @@
         </template>
     </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-import ArticleSubSection from '~/components/ArticleSubSection.vue';
-
-</script>

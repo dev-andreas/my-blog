@@ -1,7 +1,7 @@
 <template>
   <BlogArticle>
     <template #header>
-      <h1 class="article-header">Washington, D.C.</h1>
+      <h1 class="article-header">Washington, D.C., USA</h1>
       <p class="header-text">
         Washington, D.C. (District of Columbia), is the capital of the United States, home to about 700,000 people. The
         city center
@@ -186,9 +186,3 @@
     </template>
   </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-import ArticleSubSection from '~/components/ArticleSubSection.vue';
-
-</script>

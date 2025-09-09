@@ -1,7 +1,7 @@
 <template>
   <BlogArticle>
     <template #header>
-      <h1 class="article-header">Chicago, Illinois</h1>
+      <h1 class="article-header">Chicago, Illinois, USA</h1>
       <p class="header-text">
         Chicago, with a population of around 2.7 million people (as of 2025), ranks as the third most populous city in
         the United States and the most populous in the Midwestern region. Considering its size, I suggest a 4-day stay.
@@ -133,8 +133,3 @@
     </template>
   </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-
-</script>

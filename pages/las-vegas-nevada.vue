@@ -1,7 +1,7 @@
 <template>
     <BlogArticle>
         <template #header>
-            <h1 class="article-header">Las Vegas, Nevada</h1>
+            <h1 class="article-header">Las Vegas, Nevada, USA</h1>
             <p class="header-text">
                 Las Vegas, a desert city with a population of approximately 650,000 people, is known for its huge
                 casinos and luxurious hotels. However, apart from these attractions, the city has not much more to
@@ -81,9 +81,3 @@
         </template>
     </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-import ArticleSubSection from '~/components/ArticleSubSection.vue';
-
-</script>

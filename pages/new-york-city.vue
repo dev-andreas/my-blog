@@ -1,7 +1,7 @@
 <template>
   <BlogArticle>
     <template #header>
-      <h1 class="article-header">New York City</h1>
+      <h1 class="article-header">New York City, USA</h1>
       <p class="header-text">
         New York City (NYC) is by far the most poplous City in the United States and offers a variety of activities.
         It's a must-see if you're travelling on the east coast!
@@ -256,9 +256,3 @@
     </template>
   </BlogArticle>
 </template>
-
-<script setup>
-import ArticleSection from '~/components/ArticleSection.vue';
-
-
-</script>

@@ -10,15 +10,16 @@
           <div class="h-0.5 rounded-full bg-font-dark w-4"></div>
         </button>
         <Transition name="slide-top">
-          <a v-if="!scrolledToTop" class="font-bold transition ease-out duration-200" :class="{ 'opacity-0': scrolledToTop }" href="#">Back to
+          <a v-if="!scrolledToTop" class="font-bold transition ease-out duration-200"
+            :class="{ 'opacity-0': scrolledToTop }" href="#">Back to
             top</a>
         </Transition>
       </div>
     </div>
-    <div class="standard-blog-width flex flex-col mdlg:flex-row items-start mdlg:gap-12">
+    <div class="standard-blog-width flex flex-col mdlg:flex-row items-start justify-between">
 
       <!-- desktop sidebar -->
-      <aside v-if="!mobileView" class="sticky top-30 border-r border-font-dark w-72 overflow-auto pl-4 pr-4 pb-2">
+      <aside v-if="!mobileView" class="sticky top-30 border-r border-font-dark w-72 overflow-auto pr-4 pb-2 flex-shrink-0">
         <div class="sticky top-0 p-2 backdrop-blur-md bg-backg-light flex flex-col gap-4 items-start z-50">
           <p class="font-bold">Table of Contents</p>
         </div>
@@ -59,11 +60,11 @@
         </Transition>
       </aside>
 
-      <div class="flex flex-col w-full mt-10 gap-10">
+      <div class="flex flex-col w-full mt-10 standard-article-width">
         <header class="flex flex-col gap-10">
           <slot name="header"></slot>
         </header>
-        <article class="flex flex-col gap-10">
+        <article class="flex flex-col">
           <slot name="body"></slot>
         </article>
       </div>

@@ -23,5 +23,7 @@ export const useWidthStore = defineStore("width", () => {
         window.addEventListener('resize', resize);
     });
 
-    return { windowWidth, sizes };
+    const mobileView = computed(() => windowWidth.value < 1024);
+
+    return { windowWidth, sizes, mobileView };
 });
