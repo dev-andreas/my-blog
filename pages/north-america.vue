@@ -12,7 +12,7 @@
         </template>
         <template #body>
             <ArticleSection id="united-states" header="🇺🇸 United States">
-                <ThumbnailGrid :destinations="citiesStore.usaDestinations" />
+                <ThumbnailGrid :destinations="citiesStore.usaDestinations" id="usaGrid"></ThumbnailGrid>
             </ArticleSection>
         </template>
     </BlogArticle>

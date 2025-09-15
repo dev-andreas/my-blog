@@ -12,17 +12,17 @@
         <template #body>
             <ArticleSection id="europe" header="Europe"></ArticleSection>
             <ArticleSubSection id="france" header="🇫🇷 France">
-                <ThumbnailGrid :destinations="citiesStore.franceDestinations"></ThumbnailGrid>
+                <ThumbnailGrid :destinations="citiesStore.franceDestinations" id="franceGrid"></ThumbnailGrid>
             </ArticleSubSection>
             <ArticleSubSection id="italy" header="🇮🇹 Italy">
-                <ThumbnailGrid :destinations="citiesStore.italyDestinations"></ThumbnailGrid>
+                <ThumbnailGrid :destinations="citiesStore.italyDestinations" id="italyGrid"></ThumbnailGrid>
             </ArticleSubSection>
             <ArticleSubSection id="monaco" header="🇲🇨 Monaco">
-                <ThumbnailGrid :destinations="citiesStore.monacoDestinations"></ThumbnailGrid>
+                <ThumbnailGrid :destinations="citiesStore.monacoDestinations" id="monacoGrid"></ThumbnailGrid>
             </ArticleSubSection>
             <ArticleSection id="north-america" header="North America"></ArticleSection>
             <ArticleSubSection id="united-states" header="🇺🇸 United States">
-                <ThumbnailGrid :destinations="citiesStore.usaDestinations" />
+                <ThumbnailGrid :destinations="citiesStore.usaDestinations" id="usaGrid" />
             </ArticleSubSection>
         </template>
     </BlogArticle>
@@ -36,6 +36,6 @@ const citiesStore = useCitiesStore();
 const widthStore = useWidthStore();
 
 const zoom = computed(() => {
-  return widthStore.windowWidth < widthStore.sizes['sm'] ? 1 : 2
+    return widthStore.windowWidth < widthStore.sizes['sm'] ? 1 : 2
 })
 </script>

@@ -12,13 +12,13 @@
         </template>
         <template #body>
             <ArticleSection id="france" header="🇫🇷 France">
-                <ThumbnailGrid :destinations="citiesStore.franceDestinations"></ThumbnailGrid>
+                <ThumbnailGrid :destinations="citiesStore.franceDestinations" id="franceGrid"></ThumbnailGrid>
             </ArticleSection>
             <ArticleSection id="italy" header="🇮🇹 Italy">
-                <ThumbnailGrid :destinations="citiesStore.italyDestinations"></ThumbnailGrid>
+                <ThumbnailGrid :destinations="citiesStore.italyDestinations" id="italyGrid"></ThumbnailGrid>
             </ArticleSection>
             <ArticleSection id="monaco" header="🇲🇨 Monaco">
-                <ThumbnailGrid :destinations="citiesStore.monacoDestinations"></ThumbnailGrid>
+                <ThumbnailGrid :destinations="citiesStore.monacoDestinations" id="monacoGrid"></ThumbnailGrid>
             </ArticleSection>
         </template>
     </BlogArticle>

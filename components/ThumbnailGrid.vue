@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-5">
+  <div class="flex flex-col gap-5" :id="props.id">
     <div class="flex flex-col gap-5">
       <BlogThumbnail v-for="destination in items" :header="destination.mapName" :description="destination.description"
         :date="destination.date" :rating="destination.rating" :image="destination.thumbnail" :to="destination.link"
@@ -21,13 +21,21 @@ const props = defineProps({
   destinations: {
     type: Array,
     default: [],
-  }
+  },
+  id: {
+    type: String,
+    default: "",
+  },
 });
 
 const widthStore = useWidthStore();
 
 function toggle() {
   open.value = !open.value;
+  if (!open.value) {
+    console.log("test");
+    document.getElementById(props.id)?.scrollIntoView({ behavior: "smooth" });
+  }
 }
 
 const showToggle = computed(() => props.destinations.length > 3);

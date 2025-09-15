@@ -12,7 +12,6 @@
 </template>
 
 <script setup>
-import { useWidthStore } from '/stores/width';
 
 const props = defineProps({
   locations: {
@@ -36,7 +35,6 @@ const props = defineProps({
     default: [30, -10]
   }
 });
-const widthStore = useWidthStore();
 const map = ref(null);
 
 // When the map is ready

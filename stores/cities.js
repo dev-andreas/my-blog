@@ -12,7 +12,7 @@ export const useCitiesStore = defineStore("cities", () => {
         link: "/new-york-city",
         date: new Date('2024-11-27'),
         thumbnail: '/images/thumbnails/nyc_thumb.jpeg',
-        description: 'Huge city, tall skyscrapers',
+        description: 'Huge city, tall skyscrapers!',
     }));
     destinationMap.set('dc-us', reactive({
         mapName: "Washington, DC, USA",
@@ -39,7 +39,7 @@ export const useCitiesStore = defineStore("cities", () => {
         link: "/cleveland-ohio",
         date: new Date('2025-01-14'),
         thumbnail: '/images/thumbnails/cleveland_thumb.jpeg',
-        description: 'Theater district and huge art museum',
+        description: 'Large theater district and huge art museum',
     }));
     destinationMap.set('detroit-us', reactive({
         mapName: "Detroit, MI, USA",
@@ -93,7 +93,7 @@ export const useCitiesStore = defineStore("cities", () => {
         link: "/charleston-south-carolina",
         date: new Date('2025-03-20'),
         thumbnail: '/images/thumbnails/charleston_thumb.jpeg',
-        description: 'Beautiful old town with dolphins at the coast',
+        description: 'Beautiful old town with dolphins at the coast!',
     }));
     destinationMap.set('miami-us', reactive({
         mapName: "Miami, FL, USA",
@@ -102,7 +102,7 @@ export const useCitiesStore = defineStore("cities", () => {
         link: "/miami-florida",
         date: new Date('2025-03-16'),
         thumbnail: '/images/thumbnails/miami_thumb.jpeg',
-        description: 'Grat beach and tropical weather',
+        description: 'Great beach and tropical weather',
     }));
     destinationMap.set('sf-us', reactive({
         mapName: "San Francisco, CA, USA",
@@ -111,7 +111,7 @@ export const useCitiesStore = defineStore("cities", () => {
         link: "/san-francisco-california",
         date: new Date('2025-05-17'),
         thumbnail: '/images/thumbnails/sf_thumb.jpeg',
-        description: 'Iconic Golden Gate Bridge',
+        description: 'The iconic Golden Gate Bridge',
     }));
     destinationMap.set('las-vegas-us', reactive({
         mapName: "Las Vegas, NV, USA",
@@ -120,7 +120,7 @@ export const useCitiesStore = defineStore("cities", () => {
         link: "/las-vegas-nevada",
         date: new Date('2025-05-20'),
         thumbnail: '/images/thumbnails/las_vegas_thumb.jpeg',
-        description: 'Trash',
+        description: 'Lots of casinos and homeless people',
     }));
     destinationMap.set('zion-us', reactive({
         mapName: "Zion National Park, UT, USA",
@@ -150,19 +150,10 @@ export const useCitiesStore = defineStore("cities", () => {
     ]);
 
     // france
-    destinationMap.set('nice-fr', reactive({
-        mapName: "Nice, France",
-        position: [43.69603600, 7.26559200],
-        rating: 6,
-        link: "/nice-france",
-        date: new Date('2025-09-01'),
-        thumbnail: '/images/thumbnails/nice_thumb.jpeg',
-        description: 'Beautiful old town and coast',
-    }));
     destinationMap.set('menton-fr', reactive({
         mapName: "Menton, France",
         position: [43.774483, 7.497540],
-        rating: 6,
+        rating: 7,
         link: "/menton-france",
         date: new Date('2025-08-27'),
         thumbnail: '/images/thumbnails/menton_thumb.jpeg',
@@ -170,7 +161,6 @@ export const useCitiesStore = defineStore("cities", () => {
     }));
 
     const franceDestinations = reactive([
-        destinationMap.get('nice-fr'),
         destinationMap.get('menton-fr'),
     ]);
 
@@ -178,7 +168,7 @@ export const useCitiesStore = defineStore("cities", () => {
     destinationMap.set('monaco-mc', reactive({
         mapName: "Monaco",
         position: [43.733334, 7.416667],
-        rating: 10,
+        rating: 9,
         link: "/monaco",
         date: new Date('2025-08-30'),
         thumbnail: '/images/thumbnails/monaco_thumb.jpeg',
@@ -206,7 +196,6 @@ export const useCitiesStore = defineStore("cities", () => {
 
     // most recent destinations
     const mostRecentDestinations = reactive([
-        destinationMap.get('nice-fr'),
         destinationMap.get('monaco-mc'),
         destinationMap.get('menton-fr'),
         destinationMap.get('genoa-it'),

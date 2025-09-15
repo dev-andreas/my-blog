@@ -27,19 +27,19 @@
         <LeafletMap :locations="citiesStore.allDestinations" :zoom="zoom"></LeafletMap>
         <p>You can also click on one of the buttons below to get a more refined overview by continent:</p>
         <div class="flex flex-wrap gap-3">
-          <InternalButton to="/all-destinations">All Destinations</InternalButton>
           <InternalButton to="/europe">Europe</InternalButton>
           <InternalButton to="/north-america">North America</InternalButton>
+          <InternalButton to="/all-destinations">All Destinations</InternalButton>
         </div>
       </ArticleSection>
       <ArticleSection id="most-recent" header="Recent Trips">
         <p>Here are my most recent trips! Click on the cards below to read more about the destination:</p>
-        <ThumbnailGrid :destinations="citiesStore.mostRecentDestinations"></ThumbnailGrid>
+        <ThumbnailGrid :destinations="citiesStore.mostRecentDestinations" id="mostRecentTripsGrid"></ThumbnailGrid>
       </ArticleSection>
 
-      <!--<ArticleSection id="highlights" header="Highlights ✨">
-        <ThumbnailGrid :destinations="citiesStore.highlightDestinations"></ThumbnailGrid>
-      </ArticleSection>-->
+      <ArticleSection id="usa-exchange-year" header="USA Exchange Year">
+        <ThumbnailGrid :destinations="citiesStore.usaDestinations"></ThumbnailGrid>
+      </ArticleSection>
     </template>
   </BlogArticle>
 </template>

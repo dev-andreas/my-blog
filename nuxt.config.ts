@@ -7,6 +7,11 @@ export default defineNuxtConfig({
     preset: 'static' // tells Nuxt to generate static HTML files
   },
 
+  site: {
+    url: 'https://blog.gerasimow.de',
+    name: 'Travel blog from Andreas Gerasimow.'
+  },
+
   app: {
     head: {
       charset: 'utf-8',
@@ -15,6 +20,13 @@ export default defineNuxtConfig({
       meta: [
         { name: 'description', content: 'Travel blog from Andreas Gerasimow.' }
       ],
+      script: [
+        {
+          src: "//gc.zgo.at/count.js",
+          async: true,
+          'data-goatcounter': "https://agerasimow.goatcounter.com/count"
+        }
+      ]
     },
     pageTransition: {
       name: 'fade',
@@ -30,5 +42,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@pinia/nuxt', '@nuxtjs/leaflet']
+  modules: ['@pinia/nuxt', '@nuxtjs/leaflet', '@nuxtjs/sitemap']
 })
