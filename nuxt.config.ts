@@ -1,4 +1,9 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+const site = {
+    url: 'https://blog.gerasimow.de',
+    name: 'Travel blog from Andreas Gerasimow.'
+}
+
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
@@ -7,10 +12,7 @@ export default defineNuxtConfig({
     preset: 'static' // tells Nuxt to generate static HTML files
   },
 
-  site: {
-    url: 'https://blog.gerasimow.de',
-    name: 'Travel blog from Andreas Gerasimow.'
-  },
+  site,
 
   app: {
     head: {
@@ -18,7 +20,16 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       title: 'Travel Blog',
       meta: [
-        { name: 'description', content: 'Travel blog from Andreas Gerasimow.' }
+        { property: "og:title", content: site.name },
+        { property: "og:url", content: site.url },
+        {
+            name: 'description',
+            content: 'Hi there 👋. I’m Andreas, and this is my travel blog where I share my experiences from all my trips around the world.'
+        },
+        { property: 'og:image', content: site.url + '/images/travel_blog_thumb.jpeg' },
+        { property: 'og:image:type', content: 'image/jpeg' },
+        { property: 'og:image:width', content: '480' },
+        { property: 'og:image:height', content: '640' },
       ],
       script: [
         {
