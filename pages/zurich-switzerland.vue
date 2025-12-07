@@ -58,10 +58,9 @@
       </ArticleSubSection>
       <ArticleSubSection id="grossmuenster" header="Grossmünster">
         <p>
-          If you want an even nicer view over Zurich without too many tourists, you should walk up the Grossmünster.
-          This is a church on the other side of the Limmat River.
-          I guess that most tourists don't know that you can walk up there, or are simply too lazy.
-          Walking up the tower takes about 15 minutes and is not that exhausting.
+          If you want an even nicer view over Zurich without too many tourists, you should walk up the Grossmünster, a church on the other side of the Limmat River.
+          I assume that most tourists don't know that you can walk up there, or are simply too lazy.
+          Walking up the tower takes about 15 minutes and isn't too exhausting.
           The entrance fee for adults is CHF 5, and CHF 2 for students, as of 2025.
         </p>
         <ArticleImage id="grossmuenster-images" :images="[
