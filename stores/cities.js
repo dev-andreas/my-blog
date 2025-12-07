@@ -194,11 +194,26 @@ export const useCitiesStore = defineStore("cities", () => {
         destinationMap.get('genoa-it'),
     ]);
 
+    // switzerland
+    destinationMap.set('zurich-ch', reactive({
+        mapName: "Zurich, Switzerland",
+        position: [47.374449, 8.541042],
+        rating: 8,
+        link: "/zurich-switzerland",
+        date: new Date('2025-10-11'),
+        thumbnail: '/images/thumbnails/zurich_thumb.jpeg',
+        description: 'Amazing Raclette and Chocolate!',
+    }))
+
+    const switzerlandDestinations = reactive([
+        destinationMap.get('zurich-ch'),
+    ]);
+
     // most recent destinations
     const mostRecentDestinations = reactive([
+        destinationMap.get('zurich-ch'),
         destinationMap.get('monaco-mc'),
         destinationMap.get('menton-fr'),
-        destinationMap.get('genoa-it'),
     ]);
 
     // highlight destinations
@@ -212,7 +227,7 @@ export const useCitiesStore = defineStore("cities", () => {
     const allDestinations = reactive([...destinationMap.values()]);
 
     // europe destinations
-    const europeDestinations = reactive([...franceDestinations, ...italyDestinations, ...monacoDestinations]);
+    const europeDestinations = reactive([...franceDestinations, ...italyDestinations, ...monacoDestinations, ...switzerlandDestinations]);
 
     // usa destinations
     const northAmericaDestinations = reactive([...usaDestinations])
@@ -225,6 +240,7 @@ export const useCitiesStore = defineStore("cities", () => {
         northAmericaDestinations,
         franceDestinations,
         italyDestinations,
+        switzerlandDestinations,
         monacoDestinations,
         usaDestinations
     };

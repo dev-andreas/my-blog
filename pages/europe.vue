@@ -20,6 +20,9 @@
             <ArticleSection id="monaco" header="🇲🇨 Monaco">
                 <ThumbnailGrid :destinations="citiesStore.monacoDestinations" id="monacoGrid"></ThumbnailGrid>
             </ArticleSection>
+          <ArticleSection id="switzerland" header="🇨🇭 Switzerland">
+            <ThumbnailGrid :destinations="citiesStore.switzerlandDestinations" id="switzerlandGrid"></ThumbnailGrid>
+          </ArticleSection>
         </template>
     </BlogArticle>
 </template>

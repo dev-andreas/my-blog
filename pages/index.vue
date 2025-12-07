@@ -24,7 +24,9 @@
           You can click on a marker to learn more about the destination.
           I hope you find my blog helpful!
         </p>
-        <LeafletMap :locations="citiesStore.allDestinations" :zoom="zoom"></LeafletMap>
+        <ClientOnly>
+          <LeafletMap :locations="citiesStore.allDestinations" :zoom="zoom"></LeafletMap>
+        </ClientOnly>
         <p>You can also click on one of the buttons below to get a more refined overview by continent:</p>
         <div class="flex flex-wrap gap-3">
           <InternalButton to="/europe">Europe</InternalButton>
