@@ -106,8 +106,8 @@
         <ArticleImage id="seeuferweg-images" :images="[
           { path: '/images/places/zurich/seeuferweg2.jpeg', alt: 'Seeuferweg' },
         ]"></ArticleImage>
-        <ArticleImage id="grossmuenster-images2" :images="[
-                      { path: '/images/places/zurich/heureka.jpeg', alt: 'Heureka Sculpture' },
+        <ArticleImage id="seeuferweg-images2" :images="[
+          { path: '/images/places/zurich/heureka.jpeg', alt: 'Heureka Sculpture' },
           { path: '/images/places/zurich/seeuferweg1.jpeg', alt: 'A small pond that looked nice' },
         ]"></ArticleImage>
       </ArticleSubSection>
